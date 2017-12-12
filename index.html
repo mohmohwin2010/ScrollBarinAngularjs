@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="angular.min.js"></script>
+        <script src="ng-infinite-scroll.min.js"></script>
+        <script src="custom.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div ng-app='myApp' ng-controller='DemoController'>
+          <!-- <div infinite-scroll='loadMore()' infinite-scroll-distance='2'> -->
+          <div infinite-scroll='loadMore()' infinite-scroll-distance='3'>
+            <img ng-repeat='image in images' ng-src='http://placehold.it/225x250&text={{image}}'>
+          </div>
+        </div>
+    </body>
+</html>
